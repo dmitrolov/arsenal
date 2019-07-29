@@ -13,4 +13,6 @@ import "./reservation/reservation"
 import "./contacts/contacts"
 import "./photo-gallery/photo-gallery"
 
+import "../../../assets/fire.gif"
+
 
