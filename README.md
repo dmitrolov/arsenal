@@ -5,6 +5,7 @@
 + тесты (опционально)
 + дедлайн 30.07 18:00
 + deploy на хироку
+<<<<<<< HEAD
 
 # Trello link
 https://trello.com/b/CEaNokhS/hakarocu
