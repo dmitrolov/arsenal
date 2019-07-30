@@ -5,6 +5,7 @@
     display: flex
     flex-direction: row
     flex-wrap: wrap
+    justify-content: space-between
     &__button
         color: white
         cursor: pointer
@@ -12,9 +13,12 @@
         margin: 0.2em 0.5em
         +tablet-portrait
             display: none
+
     &__logo
         width: 220px
         margin: 0.5em 1em
+        +tablet-landscape
+            margin: 1em 2em
         object-fit: contain
 
 .navigation-container
@@ -29,6 +33,8 @@
         display: flex
         justify-content: flex-end
         width: calc(100% - 220px - 4em)
+    +tablet-landscape
+        width: calc(100% - 220px - 6em)
         align-items: center
     &__item
         padding: 0.5em
