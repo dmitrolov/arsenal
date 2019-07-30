@@ -1,0 +1,37 @@
+@import "./../../variables"
+@import "./../../mixins"
+
+body
+    background: #000
+    margin: 0
+    padding: 0
+
+.content-container
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    justify-content: space-around
+    // align-items: center
+    &__item
+        width: 100%
+        +tablet-portrait
+            width: 45%
+        +desktop
+            //width: 23%
+            width: 30%
+        &.small
+            display: flex
+            flex-direction: column
+            justify-content: space-around
+            width: 100%
+            +tablet-portrait
+                flex-direction: row
+                > *
+                    width: 45%
+            +desktop
+                width: 30%
+                flex-direction: column
+                justify-content: space-between
+                > *
+                    width: auto
+

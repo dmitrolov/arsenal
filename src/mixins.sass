@@ -1,0 +1,29 @@
+@import "variables"
+
+@mixin arrow-transform($prop)
+  transform: rotate($prop)
+  -webkit-transform: rotate($prop)
+
+@mixin mobile-landscape
+  @media (min-width: $mobile-landscape)
+    @content
+
+@mixin tablet-portrait
+  @media (min-width: $tablet-portrait)
+    @content
+
+@mixin tablet-landscape
+  @media (min-width: $tablet-landscape)
+    @content
+
+@mixin desktop
+  @media (min-width: $desktop)
+    @content
+
+@mixin link-color($color, $color2:$color)
+  color: $color
+  cursor: pointer
+  text-decoration: none
+  &:hover, &:active, &:focus
+    color: darken($color2,10%)
+    text-decoration: underline

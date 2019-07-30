@@ -1,0 +1,50 @@
+@import "./../../variables"
+@import "./../../mixins"
+
+.header-menu
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    justify-content: space-between
+    &__button
+        color: white
+        cursor: pointer
+        font-size: 2em
+        margin: 0.2em 0.5em
+        +tablet-portrait
+            display: none
+
+    &__logo
+        width: 220px
+        margin: 0.5em 1em
+        +tablet-landscape
+            margin: 1em 2em
+        object-fit: contain
+
+.navigation-container
+    display: none
+    text-align: center
+    padding: 0
+    margin: 0
+    list-style-type: none
+    width: 100%
+    +tablet-portrait
+        margin: 0 1em
+        display: flex
+        justify-content: flex-end
+        width: calc(100% - 220px - 4em)
+    +tablet-landscape
+        width: calc(100% - 220px - 6em)
+        align-items: center
+    &__item
+        padding: 0.5em
+    &__link
+        +link-color(white, orangered)
+
+#menu-toggle
+    display: none
+    &:checked
+        + .navigation-container
+            display: flex
+            flex-direction: column
+

@@ -1,0 +1,16 @@
+extends ../../page-templates/base.pug
+include bar-menu/bar-menu
+include reservation/reservation
+include photo-gallery/photo-gallery
+include karaoke-gallery/karaoke-gallery
+
+block content
+    .content-container
+        .content-container__item
+            +bar-menu
+        .content-container__item
+            +photo-gallery
+        .content-container__item.small
+            +karaoke-gallery
+            +reservation
+
