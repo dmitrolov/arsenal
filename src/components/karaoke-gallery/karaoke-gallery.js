@@ -29,10 +29,14 @@ class Video {
     }
 }
 $('document').ready(() => {
-    videos.forEach((elem, i) => {
-        const item = new Video('video'+ i, elem);
-        item.appendTo(videoCarousel);
-    });
+    try {
+        videos.forEach((elem, i) => {
+            const item = new Video('video'+ i, elem);
+            item.appendTo(videoCarousel);
+        });
+    } catch (e) {
+        console.log("error")
+    }
     videoCarousel.owlCarousel({
         loop: false,
         margin: 10,

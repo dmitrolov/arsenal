@@ -5,4 +5,4 @@ import "owl.carousel2";
 import "../../../node_modules/video.js/dist/video-js.min.css"
 import "videojs-youtube";
 
-import "./../../../assets/img/logo/logo1.png"
+import "./../../../assets/img/logo/logo1.webp"

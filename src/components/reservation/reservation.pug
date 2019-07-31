@@ -2,30 +2,41 @@ mixin reservation
     section
         form(action="#").reservation-container
             h1.reservation-container__item.reservation-container__header ONLINE TABLE BOOKING
+            label.reservation-container__label(for="user-name") Enter your name
             input.reservation-container__item(
+                id="user-name"
                 placeholder="Your name"
                 type="text"
                 required
             )
+            label.reservation-container__label(for="user-phone") Enter your phone number
             input.reservation-container__item(
+                id="user-phone"
                 placeholder="Your phone"
                 type="tel"
                 pattern="[0-9]{1,}"
                 required
             )
+            label.reservation-container__label(for="user-email") Enter your e-mail address
             input.reservation-container__item(
+                id="user-email"
                 placeholder="Your e-mail"
                 type="email"
                 pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
                 required
             )
             .reservation-container__item
+
+                label.reservation-container__label(for="booking-date") Date
                 input.reservation-container__daytime(
+                    id="booking-date"
                     placeholder=""
                     type="date"
                     required
                 )
+                label.reservation-container__label(for="booking-time") Time
                 input.reservation-container__daytime(
+                    id="booking-time"
                     min="11:00"
                     max="23:59"
                     type="time"
