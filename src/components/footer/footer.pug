@@ -10,8 +10,8 @@ mixin footer
                 .contacts-container
                     h1.contacts-container__item.contacts-container__header Contacts
                     span.contacts-container__item ∇ another str.
-                    span.contacts-container__item ✆ +123-456-7890
-                    span.contacts-container__item ✉ sample@gmail.com
+                    a(href="tel:123456789").contacts-container__item--link ✆ +123-456-7890
+                    a(href="mailto:sample@gmail.com").contacts-container__item--link ✉ sample@gmail.com
             .footer-container__item
                 h1.contacts-container__header Navigation
                 ul.footer-navigation-container
