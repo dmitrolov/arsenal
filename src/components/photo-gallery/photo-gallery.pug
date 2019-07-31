@@ -2,25 +2,13 @@ mixin photo-gallery
     section
         h1 PHOTO GALLERY
         .owl-carousel.photo-gallery-carousel
-            .item
-                img(data-src="assets/img/photo-gallery/about1.webp" alt="photo gallery image")
-            .item
-                img(data-src="assets/img/photo-gallery/about2.webp" alt="photo gallery image")
-            .item
-                img(data-src="assets/img/photo-gallery/about3.webp" alt="photo gallery image")
-            .item
-                img(data-src="assets/img/photo-gallery/about4.webp" alt="photo gallery image")
-            .item
-                img(data-src="assets/img/photo-gallery/about5.webp" alt="photo gallery image")
-            .item
-                img(data-src="assets/img/photo-gallery/about6.webp" alt="photo gallery image")
-            .item
-                img(data-src="assets/img/photo-gallery/about7.webp" alt="photo gallery image")
-            .item
-                img(data-src="assets/img/photo-gallery/about8.webp" alt="photo gallery image")
-            .item
-                img(data-src="assets/img/photo-gallery/about9.webp" alt="photo gallery image")
-            .item
-                img(data-src="assets/img/photo-gallery/about10.webp" alt="photo gallery image")
-            .item
-                img(data-src="assets/img/photo-gallery/about11.webp" alt="photo gallery image")
+            - for (let i = 1; i <= 11; i++)
+                .item
+                    img(
+                        data-src=`assets/img/photo-gallery/photo-gallery-320/about${i}.webp`
+                        srcset=`
+                                                assets/img/photo-gallery/photo-gallery-320/about${i}.webp 767w,
+                                                assets/img/photo-gallery/photo-gallery-767/about${i}.webp,
+                                            `
+                        alt="photo gallery image"
+                    )

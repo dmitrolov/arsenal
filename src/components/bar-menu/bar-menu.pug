@@ -2,21 +2,13 @@ mixin bar-menu
     section.bar-menu-container
         h1.bar-menu-header BAR MENU
         .owl-carousel.bar-menu-carousel
-            .item.bar-menu-carousel__item
-                img(data-src="assets/img/bar-menu/page1.webp" alt="Bar menu image")
-            .item.bar-menu-carousel__item
-                img(data-src="assets/img/bar-menu/page2.webp" alt="Bar menu image")
-            .item.bar-menu-carousel__item
-                img(data-src="assets/img/bar-menu/page3.webp" alt="Bar menu image")
-            .item.bar-menu-carousel__item
-                img(data-src="assets/img/bar-menu/page4.webp" alt="Bar menu image")
-            .item.bar-menu-carousel__item
-                img(data-src="assets/img/bar-menu/page5.webp" alt="Bar menu image")
-            .item.bar-menu-carousel__item
-                img(data-src="assets/img/bar-menu/page6.webp" alt="Bar menu image")
-            .item.bar-menu-carousel__item
-                img(data-src="assets/img/bar-menu/page7.webp" alt="Bar menu image")
-            .item.bar-menu-carousel__item
-                img(data-src="assets/img/bar-menu/page8.webp" alt="Bar menu image")
-            .item.bar-menu-carousel__item
-                img(data-src="assets/img/bar-menu/page9.webp" alt="Bar menu image")
+            - for (let i = 1; i <= 10; i++)
+                .item.bar-menu-carousel__item
+                    img(
+                        data-src=`assets/img/bar-menu/bar-menu-320/page${i}.webp`
+                        srcset=`
+                            assets/img/bar-menu/bar-menu-320/page${i}.webp 767w,
+                            assets/img/bar-menu/bar-menu-760/page${i}.webp,
+                        `
+                        alt="Bar menu image"
+                    )
