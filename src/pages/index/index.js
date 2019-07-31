@@ -8,10 +8,10 @@ import "./index.sass";
 import $ from "jquery";
 window.jQuery = window.$ = $;
 // Import components
-import "./bar-menu/bar-menu"
-import "./reservation/reservation"
-import "./photo-gallery/photo-gallery"
-import "./karaoke-gallery/karaoke-gallery"
+import "../../components/bar-menu/bar-menu"
+import "../../components/reservation/reservation"
+import "../../components/photo-gallery/photo-gallery"
+import "../../components/karaoke-gallery/karaoke-gallery"
 
 import "../../../assets/fire.gif"
 
