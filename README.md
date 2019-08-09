@@ -8,3 +8,6 @@
 
 # Trello link
 https://trello.com/b/CEaNokhS/hakarocu
+
+# GitHub Pages
+https://dmitrolov.github.io/hakarocu/
